@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const config: NextConfig = {
+  output: 'export',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      }
+    ],
+    unoptimized: true, // Add this for static exports
+  },
+}
 
-export default nextConfig;
+export default config;

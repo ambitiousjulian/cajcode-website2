@@ -1,18 +1,24 @@
-import type { Config } from "tailwindcss";
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx,mdx}', // This catches all files in src
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#FF6B6B',
+        secondary: '#4ECDC4',
+        dark: '#2C3E50',
+        light: '#ECF0F1',
+        accent: '#FFE66D',
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        display: ['var(--font-raleway)'],
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+}
