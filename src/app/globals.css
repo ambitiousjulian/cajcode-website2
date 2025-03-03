@@ -25,6 +25,17 @@ body {
   }
 }
 
+@layer utilities {
+  .aspect-iphone {
+    aspect-ratio: 9 / 19.5;
+  }
+  
+  .aspect-project {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+
 @layer components {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
@@ -35,7 +46,8 @@ body {
   }
   
   .card {
-    @apply bg-dark/50 backdrop-blur-sm rounded-lg p-6 border border-light/10;
+    @apply bg-dark/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-light/10 
+           hover:border-opacity-20 transition-all duration-300;
   }
   
   .button-primary {
