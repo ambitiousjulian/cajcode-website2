@@ -10,6 +10,7 @@ export const SITE_CONFIG = {
 
 export const NAVIGATION: NavItem[] = [
   { name: 'Home', href: '/' },
+  { name: 'Team', href: '/team' }, 
   { name: 'Apps', href: '/apps' },
   { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact' },

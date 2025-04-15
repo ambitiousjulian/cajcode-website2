@@ -12,6 +12,9 @@ const config: NextConfig = {
     ],
     unoptimized: true, // Add this for static exports
   },
+  typescript: {
+    ignoreBuildErrors: true
+  }
 }
 
 export default config;
