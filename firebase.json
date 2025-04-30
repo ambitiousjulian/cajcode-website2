@@ -23,10 +23,8 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      { "source": "/api/resume", "function": "resume" },
+      { "source": "/**",         "destination": "/index.html" }
     ],
     "headers": [
       {
@@ -76,6 +74,9 @@
       }
     ],
     "cleanUrls": true,
-    "trailingSlash": false
+    "trailingSlash": false,
+    "functions": {
+      "source": "functions"
+    }
   }
 }

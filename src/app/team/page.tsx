@@ -44,8 +44,8 @@ export default function TeamPage() {
             <h3 className="text-2xl font-bold mb-2 text-center">Julian Cajuste</h3>
             <p className="text-primary text-center mb-4">Founder & CEO</p>
             <p className="text-light/70 text-center mb-6">
-              Passionate developer and entrepreneur with extensive experience in iOS and web development. 
-              Leading CAJCODE's vision and technical direction.
+              Developer and founder shaping CAJCODE’s vision across mobile, web, AI, and cloud. 
+              Blends backend engineering, UI/UX design, and product strategy to launch secure, scalable, and user-focused platforms.
             </p>
             <div className="flex justify-center gap-4">
               <a
@@ -104,6 +104,39 @@ export default function TeamPage() {
                 className="text-light/70 hover:text-primary transition-colors"
               >
                 <FaGithub size={24} />
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Anne Abramovici */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="card group hover:border-primary/50 transition-colors"
+          >
+            <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden">
+              <Image
+                src="/images/anne.jpg"
+                alt="Anne Abramovici"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <h3 className="text-2xl font-bold mb-2 text-center">Anne Abramovici</h3>
+            <p className="text-primary text-center mb-4">Legal Document Intern</p>
+            <p className="text-light/70 text-center mb-6">
+              1L law student supporting CAJCODE with legal research and documentation. Skilled in Microsoft Office and document formatting, ensuring clarity and compliance across internal legal processes.
+            </p>
+            <div className="flex justify-center gap-4">
+              <a
+                href="https://linkedin.com/in/anne-abramovici-3824792b4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light/70 hover:text-primary transition-colors"
+              >
+                <FaLinkedin size={24} />
               </a>
             </div>
           </motion.div>
