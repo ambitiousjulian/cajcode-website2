@@ -17,15 +17,7 @@ export const NAVIGATION: NavItem[] = [
 ];
 
 export const APPS: App[] = [
-  {
-    id: 1,
-    title: 'NextJob Ai',
-    description: 'Revolutionary iOS app that gets you hired.',
-    image: '/images/apps/app1.png',
-    appStoreUrl: 'https://apps.apple.com/us/app/nextjob-ai/id6740534298',
-    technologies: ['Swift', 'SwiftUI', 'CoreData'],
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
-  },
+ 
   {
     id: 2,
     title: 'FratSwipe',
